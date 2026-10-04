@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
+    min-height: 100vh;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.card {
+    background: linear-gradient(145deg, #2a2a2a, #1f1f1f);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #888888;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #cccccc;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #444444;
+    border-radius: 5px;
+    background: #1a1a1a;
+    color: #ffffff;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+input::placeholder {
+    color: #666666;
+}
+
+.btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(145deg, #4CAF50, #45a049);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(145deg, #45a049, #3d8b40);
+}
+
+.error {
+    background: #ff4444;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.info {
+    margin-top: 20px;
+    padding: 15px;
+    background: #333333;
+    border-radius: 5px;
+    border-left: 4px solid #4CAF50;
+}
+
+.info p {
+    color: #aaaaaa;
+    font-size: 13px;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+.result h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.result-table td {
+    padding: 12px;
+    border-bottom: 1px solid #444444;
+    font-size: 14px;
+}
+
+.result-table td:first-child {
+    color: #888888;
+    font-weight: bold;
+    width: 40%;
+}
+
+.result-table td:last-child {
+    color: #ffffff;
+    text-align: right;
+}
+
+.result-table tr.total td {
+    border-top: 2px solid #4CAF50;
+    border-bottom: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #4CAF50;
+}
+
+.summary {
+    padding: 15px;
+    background: #333333;
+    border-radius: 5px;
+    border-left: 4px solid #4CAF50;
+}
+
+.summary p {
+    color: #cccccc;
+    font-size: 14px;
+}
+
+.history {
+    margin-top: 20px;
+}
+
+.history h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.history-table thead {
+    background: #333333;
+}
+
+.history-table th {
+    padding: 12px;
+    text-align: left;
+    color: #4CAF50;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 2px solid #4CAF50;
+}
+
+.history-table td {
+    padding: 12px;
+    border-bottom: 1px solid #444444;
+    font-size: 13px;
+    color: #cccccc;
+}
+
+.history-table tbody tr:hover {
+    background: #333333;
+}
+
+.btn-reset {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(145deg, #ff4444, #cc0000);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-reset:hover {
+    background: linear-gradient(145deg, #cc0000, #990000);
+}
+
+@media (max-width: 600px) {
+    .card {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .result-table td {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
